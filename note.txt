@@ -1,0 +1,128 @@
+// npm install firebase
+// npm install express or npm install express@latest
+
+
+=> How to Vite
+
+1. Install 
+    npm install --save-dev vite
+
+2. Create a new file as vite.config.js
+
+
+3. Update package.json 
+    "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+
+4. Run Build the app for production
+    npm run build
+
+5. Run Vite in development server
+    npm run dev
+
+-----------------------------------------------------
+=> How to install Tailwind CSS
+
+
+------------------------------------------------------
+
+=> Enable Email / Password Authentication
+Make sure you have enable Email/Password authentication in youu Firevase Console.
+
+Authentication > Sign-in Method
+Ensure Email/Password is enabled.
+
+=> Enable Google Sign-In in Firebase Console
+
+Authentication > Sign -in Method
+Enable Google under the list of providers
+
+Public-facing name for project = your firevase project id
+Support email for project = your firebase gmail address
+Save the changes
+
+------------------------------------------------------
+
+=> Customize the Password Reset Email Template
+you can Customize the Password reset email link to redirected user to a specific pageg in your app.
+
+Authentication > Template >  Password reset > click Edit pen
+------------------------------------------------------
+
+How to install Tailwind CSS 
+
+1. Install Tailwind CSS
+Go to tailwindcss website
+
+npm install tailwindcss @tailwindcss/postcss postcss
+
+npx tailwindcss init  ( this create a tailwind.config.js file in to your project )
+
+2. Add Tailwind to your PostCSS configuration
+create postcss.config.js manually ( Note : do not forget to export as ES6 )
+
+export default {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  }
+}
+
+3. Import Tailwind CSS
+
+@import "tailwindcss";       to your css file
+
+4. Start your build process
+npm run dev
+
+------------------------------------------------------
+
+How to install DateFns 
+
+1. Install 
+Go to DateFns website
+
+npm install date-fns --save
+
+
+2. import in src/main.js or src/js/uielement.js
+
+  import { format } from "date-fns";
+
+  const formatteddate = format(new Date(createdtime),"do MMM yyyy")
+
+------------------------------------------------------
+
+How to install Fontawesome 7
+
+1. Install 
+Go to DateFns website
+
+npm install @fortawesome/fontawesome-free
+
+
+2. import in src/main.js or src/js/app.js and src/js/authsigninapp.js
+
+  import "@fortawesome/fontawesome-free/css/all.css" ;
+
+  
+------------------------------------------------------
+=> Install express
+
+npm install express  or npm install express@latest
+
+nodemon server.js
+
+=> import 
+
+import express from "express" ;
+
+------------------------------------------------------
+=> Deploy on Cloud server
+
+1. your project need Repo public to Github 
+
+2. 
+
+------------------------------------------------------
