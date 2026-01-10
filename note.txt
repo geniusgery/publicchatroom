@@ -123,6 +123,20 @@ import express from "express" ;
 
 1. your project need Repo public to Github 
 
-2. 
+2. signin your acc to render.com
+
+3. Prepare the  build output
+  your project must builded and typically located in the "dist" directory
+
+4. Create a new static site
+  click > "New" + Static site > Github > your account > choose repo > click "connect"
+
+5. Name: publicchatroom 
+  Branch : main
+  Build Command : npm run build   ( React, Vue, vite, etc...) . ng build (Angular)
+  Publish Directory : dist
+  Start Command : 
+
+6. Environment Variables = copy paste .env data to Environment Variables
 
 ------------------------------------------------------
