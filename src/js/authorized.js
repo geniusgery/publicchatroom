@@ -24,6 +24,9 @@ export function Authorize(){
             displayName:fullname,
             photoURL: defaultprofileimg
             }).then(() => {
+
+                setLocalName(fullname);
+
                 // Redirect to index . html
                 window.location.href = "../index.html";
             })
